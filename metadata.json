@@ -1,0 +1,6 @@
+{
+  "name": "BWP Retail POS",
+  "description": "Sitio web oficial de BWP Retail POS - Sistema empresarial de punto de venta, caja, inventario y facturación por BWP Software & Cybersecurity",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
