@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, Check, CircleDollarSign, ShieldCheck, Sparkles } from 'lucide-react';
+import { ArrowRight, Check, CircleDollarSign, ShieldCheck } from 'lucide-react';
 
 export default function HeroSection() {
   return (
@@ -9,7 +9,7 @@ export default function HeroSection() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-4 py-16 sm:px-6 lg:grid-cols-[.83fr_1.17fr] lg:px-8 lg:py-24">
         <div>
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-2 text-xs font-bold uppercase tracking-[.18em] text-red-200">
-            <Sparkles className="h-4 w-4" /> Plataforma empresarial para operaciones de retail
+            < className="h-4 w-4" /> Plataforma empresarial para operaciones de retail
           </div>
           <h1 className="max-w-xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
             Convierte cada operación en <span className="text-red-500">control, trazabilidad y crecimiento.</span>
