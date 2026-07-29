@@ -14,6 +14,25 @@ import CtaBanner from '@/components/sections/CtaBanner';
 export default function HomePage() {
   return (
     <>
+        {!verified && (
+        <div style={{
+          position: 'fixed', 
+          top: 0, left: 0, width: '100vw', height: '100vh',
+          backgroundColor: 'rgba(0, 0, 0, 0.8)', 
+          display: 'flex', justifyContent: 'center', alignItems: 'center',
+          zIndex: 9999
+        }}>
+          <div style={{ background: '#fff', padding: '20px', borderRadius: '10px' }}>
+            <h2>Verificación de Seguridad</h2>
+            <Turnstile
+              sitekey="0x4AAAAAABasPB1LMzxw_dps" // Usa tu clave real
+              onSuccess={() => setVerified(true)}
+            />
+          </div>
+        </div>
+      )}
+
+      {verified && (
       <HeroSection />
       <CapabilitiesBar />
       <EnvironmentsSection />
